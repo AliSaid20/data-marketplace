@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #aa076b, #61045f);
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+   /* Swiper container styling */
+.swiper-container {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 20px;
+  /* background-color: #f4f4f4; */
+}
+
+/* Card styling */
+.card {
+  margin-top: 2.3rem;
+  height: 25.5rem;
+  width: 30rem;
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #aa076b;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for cards */
+.card:hover {
+  background-color: #61045f;
+  color: #fff;
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(97, 4, 95, 0.5);
+}
+
+/* Card title */
+.card h3 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+/* Card description */
+.card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  margin-top: 5rem;
+}
+
+/* Button styling */
+.card button {
+  margin-top: 3rem;
+  background-color: #aa076b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease; */
+  transition: background 0.3s ease, transform 0.2s ease;
+
+}
+
+.card button:hover {
+  background-color: #fff;
+  color: #aa076b;
+  /* transform: scale(1.0); */
+
+}
+.link{
+  color: rgb(156, 177, 255);
+}

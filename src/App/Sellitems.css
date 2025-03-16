@@ -1,0 +1,139 @@
+.table {
+    margin-top: 20px;
+  }
+  
+  .table th {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .table .btn {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+  
+  .text-success {
+    font-weight: bold;
+  }
+  
+  .text-danger {
+    font-weight: bold;
+  }
+  
+  .modal {
+    z-index: 1050 !important;
+  }
+  .modal-backdrop {
+    z-index: 1040 !important;
+  }
+
+  .modal-content {
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-header {
+    background-color: #f8f9fa;
+    color: #000;
+    border-bottom: 1px solid #dee2e6;
+    padding: 20px;
+  }
+  
+  .modal-header .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-body label {
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 10px;
+    gap: 2px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal-footer .btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .modal-footer .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .modal-footer .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  .modal-footer .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  .modal-footer .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+  }
+  
+  .modal-footer .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .modal-footer .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  input[type="file"] {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  textarea.form-control {
+    resize: none;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .modal-content {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .modal-header,
+    .modal-footer {
+      padding: 10px;
+    }
+  
+    .modal-header .modal-title {
+      font-size: 1.2rem;
+    }
+  
+    .modal-footer .btn {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  

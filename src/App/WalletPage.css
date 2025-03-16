@@ -1,0 +1,142 @@
+/* Wallet.css */
+
+.wallet-page {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wallet-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .wallet-balance {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .wallet-balance h2 {
+    color: #4caf50;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  .redeem-section,
+  .account-section,
+  .transaction-history {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .redeem-section h3,
+  .account-section h3,
+  .transaction-history h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .redeem-section input,
+  .account-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .redeem-section button,
+  .account-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .redeem-section button:hover,
+  .account-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  .transaction-history {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .transaction {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .transaction:last-child {
+    border-bottom: none;
+  }
+  
+  .transaction.payment {
+    color: #4caf50;
+  }
+  
+  .transaction.redeem {
+    color: #f44336;
+  }
+  
+  .transaction p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+
+  input {
+    font-size: 16px; /* Adjust input text size */
+    padding: 8px; /* Add some padding for better appearance */
+    border: 1px solid #ccc; /* Basic border styling */
+    border-radius: 4px; /* Rounded corners */
+    color: #000; /* Text color */
+  }
+  
+  input::placeholder {
+    color: rgb(130, 129, 129); /* Placeholder text color */
+    opacity: 0.8; /* Optional: Adjust the opacity of the placeholder */
+  }
+  
+  input:focus::placeholder {
+    color: lightgray; /* Change placeholder color when input is focused */
+    opacity: 0.6; /* Adjust opacity when focused */
+  }
+  
+  .wallet-empty-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .wallet-page {
+      padding: 15px;
+    }
+  
+    .wallet-balance h2 {
+      font-size: 1.5rem;
+    }
+  
+    .redeem-section button,
+    .account-section button {
+      width: 100%;
+    }
+  }
+  

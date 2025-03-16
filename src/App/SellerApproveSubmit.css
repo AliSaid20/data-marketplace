@@ -1,0 +1,67 @@
+/* SellerApproveSubmit.css */
+.fully-wrapp{
+    margin-top: 150px;
+    display: flex;
+    height: 50vh;
+
+}
+
+
+.seller-approval2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .seller-approval2 h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .seller-approval2 p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="file"] {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .seller-approving {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .seller-approving:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .seller-approving:hover {
+    background-color: #0056b3;
+  }
+  
+  .seller-approving:focus {
+    outline: none;
+  }
+  

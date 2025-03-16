@@ -1,0 +1,85 @@
+/* Container styles */
+.all-chats-container {
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Scrollable container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .all-chats-container h2 {
+    margin: 0;
+    color: #ffffff; /* WhatsApp green */
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Chat thread list */
+  .chat-thread-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Full width */
+    max-width: 600px; /* Center content on large screens */
+  }
+  
+  /* Individual chat thread */
+  .chat-thread {
+    background-color: #ffffff; /* White background for each thread */
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .chat-thread:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+  }
+  
+  /* Chat thread link */
+  .chat-thread a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  /* Chat thread info */
+  .chat-thread-info {
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  
+  }
+  
+  .chat-thread-info h3 {
+    /* margin: 0; */
+    font-size: 1.2rem;
+    color: #61045f;
+    font-weight: bold;
+  }
+  
+  .chat-thread-info p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: #61045f;
+  }
+  
+  /* Optional: Differentiating styles */
+.seller-chat .chat-thread-info {
+  background-color: #f4f4f4; /* Seller's background */
+}
+
+.buyer-chat .chat-thread-info {
+  background-color: #e8f5e9; /* Buyer's background */
+}

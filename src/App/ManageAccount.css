@@ -1,0 +1,29 @@
+.Account {
+    max-width: 600px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+  }
+  
+  /* Header styling */
+  .Account-manage {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  /* Error and success messages */
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .success-message {
+    color: #28a745;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }

@@ -1,0 +1,302 @@
+/* Navbar */
+.navbarbuy {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #333; */
+    padding: 15px 30px;
+    color: white;
+}
+
+.navbarbuy-links {
+    display: flex;
+    gap: 5rem;
+}
+
+.navbarbuy-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.navbarbuy-links a:hover {
+    /* color: #61045f; */
+    text-decoration: underline;
+}
+
+/* Search & Filter Section */
+.buy-search-filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    /* background-color: #444; */
+}
+
+.buy-search-bar {
+    width: 70%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.buy-filter-button {
+    background-color: #aa076b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-filter-button:hover {
+    background-color: #dd4ba5;
+}
+/* Card Section */
+.buy-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    padding: 30px;
+    margin-top: 20px; /* Add top margin to avoid spacing issues */
+}
+
+.buy-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+    /* width: 250px;  */
+    /* height: 300px;  */
+    position: relative;
+}
+
+.buy-card:hover {
+    /* transform: translateY(-5px); */
+    transform: scale(1.05);
+
+}
+
+.buy-card img {
+    width: 100%;
+    height: 150px; /* Fixed height for images */
+    object-fit: cover;
+}
+
+.buy-card-body {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.buy-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+.buy-card-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.buy-card-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* .buy-card-rating span {
+    color: gold;
+    font-size: 1rem;
+} */
+
+.buy-card-button {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #aa076b;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-card-button:hover {
+    background-color: #61045f;
+}
+
+.buy-card-wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: red;
+    z-index: 10;
+}
+
+.buy-card-provider {
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+}
+
+.star {
+    color: #ccc; /* Default color for empty stars */
+    font-size: 1.5rem;
+  }
+  .star.filled {
+    color: #ffcc00; /* Color for filled stars */
+  }
+  
+  .wishlist-icon {
+    font-size: 24px;
+    color: gray; /* Default empty heart color */
+    }
+  
+  .wishlist-icon.added {
+    color: red; /* Color when added to wishlist (filled heart) */
+  }
+  
+  .review-count {
+    font-size: 0.9em;
+    color: gray;
+    margin-left: 5px;
+  }
+  
+
+  .h4{
+    color: black;
+  }
+  .h3{
+    color: black;
+  }
+  .priceRange{
+    gap: 10px;
+  }
+
+  .filter-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh; /* Limit the height to 80% of the viewport */
+    overflow-y: auto; /* Make the modal scrollable if content exceeds height */
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  .filter-modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .filter-modal-content h3 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .filter-group h4 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .priceRange label,
+  .filter-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1em;
+    color: #444;
+  }
+  
+  .priceRange {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .filter-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .apply-button,
+  .close-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .apply-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .close-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .apply-button:hover {
+    background-color: #218838;
+  }
+  
+  .close-button:hover {
+    background-color: #c82333;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-modal {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .apply-button,
+    .close-button {
+      font-size: 0.9em;
+      padding: 8px 15px;
+    }
+  }
+  

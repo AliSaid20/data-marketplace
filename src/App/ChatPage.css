@@ -1,0 +1,302 @@
+
+
+/* Chat Page Wrapper */
+.chat-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #61045f; /* Match the chat page background color */
+}
+
+
+
+
+
+/* Chat Page Container */
+.chat-page-container {
+  margin: 0;
+  padding: 0;
+  width: 45rem;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Chat Header */
+.chat-header {
+  text-align: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #aa076b;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #61045f;
+}
+
+/* .chat-header .profile-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+} */
+
+.chat-header h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: #aa076b;
+}
+
+/* Chat Window */
+.chat-window {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  background-color: #5d5c5c;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between messages */
+}
+
+.message {
+  max-width: 60%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  /* margin: 5px 0; */
+  display: inline-block; /* Prevent messages from stretching */
+  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word; /* Ensures long words are wrapped */
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #61045f;
+  color: white;
+}
+
+.message.provider {
+  align-self: flex-start;
+  background-color: #aa076b;
+  color: white;
+}
+
+/* Chat Input */
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-top: 1px solid #61045f;
+}
+
+.chat-input textarea {
+  flex: 1;
+  background-color: #61045f;
+  border: none;
+  padding: 10px;
+  color: white;
+  resize: none;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.chat-input textarea::placeholder {
+  color: #ffffff;
+  opacity: 0.8; /* Slight transparency for placeholder */
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #61045f;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Payment Button */
+.payment-button-container {
+  padding: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  border-top: 1px solid #61045f;
+}
+
+.payment-button-container button {
+  background-color: #61045f;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Payment Modal Styles */
+.payment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-modal-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.payment-modal h3 {
+  font-size: 1.5rem;
+  color: #61045f;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* .payment-methods button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+} */
+
+.payment-methods button:hover {
+  background-color: #aa076b;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+}
+
+.qr-code-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qr-code-container h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #61045f;
+}
+
+.card-payment-container {
+  margin-top: 20px;
+}
+
+.card-payment-container h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.payment-modal button {
+  padding: 10px 20px;
+  background-color: #61045f;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* Card Payment Form Styles */
+.card-payment-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-payment-container input {
+  padding: 12px;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-payment-container button {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card-payment-container button:hover {
+  background-color: #218838;
+}
+
+/* Example CSS */
+.message.system {
+  background-color: #e0f7fa;
+  color: #00796b;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  top: 10px;
+  right: 10px;
+}
+
+.dropdown-clearMenu {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  z-index: 100;
+}
+
+.dropdown-clearMenu button {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-clearMenu button:hover {
+  background-color: #f0f0f0;
+}

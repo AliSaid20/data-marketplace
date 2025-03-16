@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.6;
+    
+}
+
+body{
+  
+    font-family: 'Poppins', sans-serif;
+    background:linear-gradient(to right, #aa076b, #61045f );
+    color: white;
+  
+}
+
+.navbar1 {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    color: white;
+    position: sticky;
+   /* top: 0;
+    z-index: 10; */
+  }
+
+  .brand-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .nav-links1 {
+    list-style: none;
+    display: flex;
+    padding-left: 5.1rem;
+    gap: 2rem;
+    margin: 0;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .nav-links1 li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  
+  .nav-links1 a {
+    text-decoration: none;
+    color: white;
+    /* font-weight: bold; */
+    /* transition: color 0.3s; */
+    font-size: 18px;
+  }
+  
+  .nav-links1 a:hover {
+    /* color: black; */
+    text-decoration: underline;
+
+  }
+  
+  .auth-buttonsA {
+    margin-left: auto;
+  }
+  
+  .auth-buttonA {
+    margin-top: 5px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    /* font-weight: bold; */
+    cursor: pointer;
+    transition: all 0.3s;
+    
+
+  }
+
+  .login-buttonA {
+    background-color: white;
+    color: #aa076b;
+    transition: background 0.3s ease, transform 0.2s ease;
+
+  } */
+  
+  /* .login-button:hover {
+    background-color: #aa076b;
+    color: white;
+  } */
+
+
+
+  .login-buttonA {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    
+  }
+  
+  
+  .auth-buttonsA .login-buttonA:hover {
+
+    transform: scale(1.05);
+
+  }
+  
+
+  .search-bar {
+    height: 42px;
+    font-size: 16px;
+    border-color: rgb(255, 255, 255) !important;
+    border-radius: 25px 0 0 25px !important;
+    background-color: #fff;
+  }
+
+
+  .search-button, 
+  .clear-button {
+    background-color: rgb(255, 255, 255) !important; /* Background color */
+    color: black !important; /* Text color */
+    border-color: rgb(255, 255, 255) !important; /* Border color */
+    height: 42px; /* Same height as the search bar */
+    font-size: 14px; /* Slightly larger icon size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    border-radius: 0 25px 25px 0 !important;
+    /* transition: background-color 0.3s ease, color 0.3s ease;  */
+  }
+  
+  /* Hover effect */
+  .search-button:hover, 
+  .clear-button:hover {
+    background-color: #aa076b !important;
+    border-color: white !important;
+    color: white !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Optional: Remove outline on focus */
+  .search-bar:focus, 
+  .search-button:focus, 
+  .clear-button:focus {
+    box-shadow: none;
+  }
+
+
+
+
+
+
+  
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .auth-buttons {
+      margin: 1rem 0 0 0;
+    }
+  }
